@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="res_config_settings_view_form_inherit_fiscal_1" model="ir.ui.view">
+        <field name="name">res.config.settings.view.form.inherit.fiscal</field>
+        <field name="model">res.config.settings</field>
+        <field name="inherit_id" ref="sale.res_config_settings_view_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//form/app[@name='general_settings']" position="inside">
+                    <setting>
+                        <div class="col-12 col-lg-6 o_setting_box">
+                            <div class="o_setting_left_pane">
+                                <field name="fiscal_year_start_month"/>
+                            </div>
+                            <div class="o_setting_right_pane">
+                                <label for="fiscal_year_start_month"/>
+                                <div class="text-muted">
+                                    Set the month when your fiscal year starts. This will affect quarter grouping and filtering.
+                                </div>
+                                <div class="mt16">
+                                    <p><strong>Examples:</strong></p>
+                                    <ul>
+                                        <li><strong>April:</strong> Q1: Apr-Jun, Q2: Jul-Sep, Q3: Oct-Dec, Q4: Jan-Mar</li>
+                                        <li><strong>February:</strong> Q1: Feb-Apr, Q2: May-Jul, Q3: Aug-Oct, Q4: Nov-Jan</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </setting>
+            </xpath>
+        </field>
+    </record>
+</odoo>

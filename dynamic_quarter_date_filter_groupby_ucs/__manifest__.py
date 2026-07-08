@@ -13,7 +13,7 @@
     "license": "Other proprietary",
     "description": """ """,
     "depends": ['base', 'web','sale'],
-    'images': ['static/description/icon.jpg'],
+    'images': ['static/description/banner.gif'],
     'icon':'dynamic_quarter_date_filter_groupby_ucs/static/description/icon.png',
     'assets': {
         'web.assets_backend': [

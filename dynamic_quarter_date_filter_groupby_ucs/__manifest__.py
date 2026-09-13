@@ -23,7 +23,6 @@
 
     "installable": True,
     'application': True, 
-    'license': 'LGPL-3',
     'live_test_url': '',
     'price': 10,
     'currency': 'USD',
